@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!--
+        navbar-expand indica el punto de ruptura en el que el menú se muestra extendido.
+    -->
+    <div class="navbar navbar-expand-md bg-body-tertiary">
+
+        <div class="container-fluid">
+
+            <a href="#" class="navbar-brand">Logo</a>
+
+            <!-- 
+                Menú hamburguesa.
+                data-bs-toggle="collapse": acción definida por bootstrap, en este caso, colapsar o mostrar el menú.
+                data-bs-target="#elemento": referencia al elemento sobre el que se realiza la acción.
+            -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseNavbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú colapsable -->
+            <div id="collapseNavbarContent" class="collapse navbar-collapse">
+
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item dropdown" data-bs-toggle="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Links</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="dropdown-item">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">About</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">contact</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">contact</a>
+                    </li>
+                </ul>
+
+                <form action="" class="d-flex">
+                    <input type="search" name="buscar" id="buscar" class="form-control" placeholder="Buscar...">
+                    <button class="btn btn-outline-success">Buscar</button>
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -4,13 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NavBar</title>
+    <title>Galería de imágenes</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
 
- 
+    <div>
+        <div class="carousel slide" id="carrusel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/alvar1.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption">
+                        <h1>Título: texto</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, rem? Ipsa illo architecto voluptatum, itaque quo rem incidunt tempora, soluta nihil magni at enim asperiores vitae ab obcaecati odio cum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/david_moro1.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption">
+                        <h1>Título: texto</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, rem? Ipsa illo architecto voluptatum, itaque quo rem incidunt tempora, soluta nihil magni at enim asperiores vitae ab obcaecati odio cum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/chache.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption">
+                        <h1>Título: texto</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, rem? Ipsa illo architecto voluptatum, itaque quo rem incidunt tempora, soluta nihil magni at enim asperiores vitae ab obcaecati odio cum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Sara1.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption">
+                        <h1>Título: texto</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, rem? Ipsa illo architecto voluptatum, itaque quo rem incidunt tempora, soluta nihil magni at enim asperiores vitae ab obcaecati odio cum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles -->
+        <button type="button" class="carousel-control-prev" data-bs-target="#carrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previus</span>
+        </button>
+        <button type="button" class="carousel-control-next" data-bs-target="#carrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="3"></button>
+        </div>
+
+    </div>
 
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

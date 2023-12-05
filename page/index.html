@@ -14,7 +14,7 @@
     <!--
         navbar-expand indica el punto de ruptura en el que el menú se muestra extendido.
     -->
-    <div class="navbar navbar-expand-md bg-body-tertiary">
+    <header class="navbar navbar-expand-md bg-body-tertiary">
 
         <div class="container-fluid">
 
@@ -72,7 +72,55 @@
 
         </div>
 
-    </div>
+    </header>
+
+    <section id="buscar">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <form action="#">
+                        <div class="row">
+
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <!-- <label for="buscar" class="form-label">Buscar</label> -->
+                                <input type="text" name="buscar" id="buscar" class="form-control" placeholder="Buscar">
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <select class="form-select" name="consolas" id="consolas">
+                                    <option value="0" selected>Categorías</option>
+                                    <option value="1">PS5</option>
+                                    <option value="2">XBox</option>
+                                    <option value="3">Nintendo</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <select class="form-select" name="localizacion" id="localizacion">
+                                    <option value="0" selected>Tiendas</option>
+                                    <option value="1">Pamplona</option>
+                                    <option value="2">Valencia</option>
+                                    <option value="3">Zamora</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-2 col-sm-4 col-12">
+                                <button type="button" class="btn btn-success w-100">Buscar</button>
+                            </div>
+
+                            <div class="col-lg-2 col-sm-4 col-12">
+                                <input type="checkbox" name="filtrar" id="filtrar" class="form-check-input">
+                                <label for="filtrar" class="form-check-label">filtrar</label>
+                            </div>
+
+                            
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section>
         <div class="row">

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!--
+        navbar-expand indica el punto de ruptura en el que el menú se muestra extendido.
+    -->
+    <div class="navbar navbar-expand-md bg-body-tertiary">
+
+        <div class="container-fluid">
+
+            <a href="#" class="navbar-brand">Logo</a>
+
+            <!-- 
+                Menú hamburguesa.
+                data-bs-toggle="collapse": acción definida por bootstrap, en este caso, colapsar o mostrar el menú.
+                data-bs-target="#elemento": referencia al elemento sobre el que se realiza la acción.
+            -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseNavbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú colapsable -->
+            <div id="collapseNavbarContent" class="collapse navbar-collapse">
+
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown" data-bs-toggle="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Links</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="dropdown-item">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">About</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">contact</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">contact</a>
+                    </li>
+                </ul>
+
+                <form action="" class="d-flex">
+                    <input type="search" name="buscar" id="buscar" class="form-control" placeholder="Buscar...">
+                    <button class="btn btn-outline-success">Buscar</button>
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <section>
+        <div class="row">
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <span class="bi bi-lightbulb-fill"></span>
+                            </div>
+                            <h3>Estrategia</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <span class="bi bi-trophy-fill"></span>
+                            </div>
+                            <h3>Lucha</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <span class="bi bi-people-fill"></span>
+                            </div>
+                            <h3>Cooperativo</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <span class="bi bi-grid-1x2-fill"></span>
+                            </div>
+                            <h3>Plataforma</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <span class="bi bi-emoji-dizzy-fill"></span>
+                            </div>
+                            <h3>Horror</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <span class="bi bi-car-front-fill"></span>
+                            </div>
+                            <h3>Carrera</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <span class="bi bi-incognito"></span>
+                            </div>
+                            <h3>Misterio</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <span class="bi bi-motherboard"></span>
+                            </div>
+                            <h3>Educacional</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div>
+                                <span class="bi bi-water"></span>
+                            </div>
+                            <h3>Acuático</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container">
+
+        <h2>Lorem ipsum dolor adipisicing elit.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, ipsa iusto sit vel eum eaque architecto. Optio eos ullam error. Harum magnam dolore reprehenderit, laudantium praesentium nostrum explicabo aliquam fuga?</p>
+        <a href="#">ver</a>
+        <p>20-11-2002</p>
+
+        <hr>
+
+        <h2>Lorem ipsum dolor adipisicing elit.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, ipsa iusto sit vel eum eaque architecto. Optio eos ullam error. Harum magnam dolore reprehenderit, laudantium praesentium nostrum explicabo aliquam fuga?</p>
+        <a href="#">ver</a>
+        <p>20-11-2002</p>
+
+        <ul class="pagination">
+            <li class="page-item"><a href="" class="page-link">Anterior</a></li>
+            <li class="page-item"><a href="" class="page-link">1</a></li>
+            <li class="page-item"><a href="" class="page-link">2</a></li>
+            <li class="page-item"><a href="" class="page-link">Siguiente</a></li>
+        </ul>
+
+        <a href="#" class="btn btn-primary btn-lg">Post anteriores</a>
+    </section>
+
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <ul>
+                    <li><a href="#"><span class="bi-linkedin"></span></a></li>
+                    <li><a href="#"><span class="bi-facebook"></span></a></li>
+                    <li><a href="#"><span class="bi-youtube"></span></a></li>
+                </ul>
+
+                <div>Copyright &copy;Mi web 2023</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

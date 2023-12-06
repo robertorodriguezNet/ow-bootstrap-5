@@ -1,0 +1,24 @@
+@import "../css/bootstrap.min.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+#tarjetas span{
+    color: #8800aa;
+}
+#tarjetas .card{
+    height: 100%;
+    margin-top: 5px;
+    transition: .5s all;
+}
+#tarjetas a{
+    color: black;
+    text-decoration: none;
+}
+#tarjetas .card:hover{
+    color: #ffffff;
+    background: #8800aa;
+}
+
+#tarjetas .card:hover span,
+#tarjetas .card:hover a{
+    color: #ffffff;
+}

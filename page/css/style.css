@@ -1,6 +1,40 @@
 @import "../css/bootstrap.min.css";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 
+
+#mainNav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: solid 1px transparent;
+    background-color: #fff;
+}
+#mainNav{
+    color: #000 !important;
+}
+
+header{
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-image: url('../img/home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+}
+
+@media(min-width:768px){
+    #mainNav{
+        background: transparent;
+    }
+    #mainNav a{
+        color: #fff;
+    }
+}
+
 #tarjetas span{
     color: #8800aa;
 }

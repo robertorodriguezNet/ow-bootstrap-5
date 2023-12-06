@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NavBar</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <!--
         navbar-expand indica el punto de ruptura en el que el menú se muestra extendido.
     -->
-    <header class="navbar navbar-expand-md bg-body-tertiary">
+    <nav id="mainNav" class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Logo</a>
 
-        <div class="container-fluid">
-
-            <a href="#" class="navbar-brand">Logo</a>
-
-            <!-- 
+        <!-- 
                 Menú hamburguesa.
                 data-bs-toggle="collapse": acción definida por bootstrap, en este caso, colapsar o mostrar el menú.
                 data-bs-target="#elemento": referencia al elemento sobre el que se realiza la acción.
             -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseNavbarContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseNavbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Menú colapsable -->
-            <div id="collapseNavbarContent" class="collapse navbar-collapse">
-
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Blog</a>
-                    </li>
-                    <!-- <li class="nav-item dropdown" data-bs-toggle="dropdown">
+        <!-- Menú colapsable -->
+        <div id="collapseNavbarContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Blog</a>
+            </li>
+            <!-- <li class="nav-item dropdown" data-bs-toggle="dropdown">
                         <a href="#" class="nav-link dropdown-toggle">Links</a>
                         <ul class="dropdown-menu">
                             <li>
@@ -56,226 +55,274 @@
                             </li>
                         </ul>
                     </li> -->
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">contact</a>
-                    </li>
-                </ul>
+            <li class="nav-item">
+              <a href="#" class="nav-link">contact</a>
+            </li>
+          </ul>
 
-                <form action="" class="d-flex">
-                    <input type="search" name="buscar" id="buscar" class="form-control" placeholder="Buscar...">
-                    <button class="btn btn-outline-success">Buscar</button>
-                </form>
-
-            </div>
-
-
+          <form action="" class="d-flex">
+            <input
+              type="search"
+              name="buscar"
+              id="buscar"
+              class="form-control"
+              placeholder="Buscar..."
+            />
+            <button class="btn btn-outline-success">Buscar</button>
+          </form>
         </div>
+      </div>
+    </nav>
 
+    <header>
+      <div class="container position-relative px-5">
+        <div class="row">
+          <div class="mx-auto col-lg-7 col-xl-6 col-md-12">
+            <h1>Bienvenido a mi tienda</h1>
+            <p>Compra juegos al mejor precio
+                <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error amet nam labore excepturi repellat.
+            </p>
+          </div>
+        </div>
+      </div>
     </header>
 
     <section id="buscar" class="my-3">
-        <div class="container">
-            <div class="card">
-                <div class="card-body">
-                    <form action="#">
-                        <div class="row gy-1">
-
-                            <div class="col-lg-3 col-sm-6 col-12">
-                                <!-- <label for="buscar" class="form-label">Buscar</label> -->
-                                <input type="text" name="buscar" id="buscar" class="form-control" placeholder="Buscar">
-                            </div>
-
-                            <div class="col-lg-3 col-sm-6 col-12">
-                                <select class="form-select" name="consolas" id="consolas">
-                                    <option value="0" selected>Categorías</option>
-                                    <option value="1">PS5</option>
-                                    <option value="2">XBox</option>
-                                    <option value="3">Nintendo</option>
-                                </select>
-                            </div>
-
-                            <div class="col-lg-3 col-sm-6 col-12">
-                                <select class="form-select" name="localizacion" id="localizacion">
-                                    <option value="0" selected>Tiendas</option>
-                                    <option value="1">Pamplona</option>
-                                    <option value="2">Valencia</option>
-                                    <option value="3">Zamora</option>
-                                </select>
-                            </div>
-
-                            <div class="col-lg-2 col-sm-4 col-12">
-                                <button type="button" class="btn btn-success w-100">Buscar</button>
-                            </div>
-
-                            <div class="col-lg-2 col-sm-4 col-12">
-                                <input type="checkbox" name="filtrar" id="filtrar" class="form-check-input">
-                                <label for="filtrar" class="form-check-label">filtrar</label>
-                            </div>
-
-                            
-
-                        </div>
-                    </form>
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <form action="#">
+              <div class="row gy-1">
+                <div class="col-lg-3 col-sm-6 col-12">
+                  <!-- <label for="buscar" class="form-label">Buscar</label> -->
+                  <input
+                    type="text"
+                    name="buscar"
+                    id="buscar"
+                    class="form-control"
+                    placeholder="Buscar"
+                  />
                 </div>
-            </div>
+
+                <div class="col-lg-3 col-sm-6 col-12">
+                  <select class="form-select" name="consolas" id="consolas">
+                    <option value="0" selected>Categorías</option>
+                    <option value="1">PS5</option>
+                    <option value="2">XBox</option>
+                    <option value="3">Nintendo</option>
+                  </select>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-12">
+                  <select
+                    class="form-select"
+                    name="localizacion"
+                    id="localizacion"
+                  >
+                    <option value="0" selected>Tiendas</option>
+                    <option value="1">Pamplona</option>
+                    <option value="2">Valencia</option>
+                    <option value="3">Zamora</option>
+                  </select>
+                </div>
+
+                <div class="col-lg-2 col-sm-4 col-12">
+                  <button type="button" class="btn btn-success w-100">
+                    Buscar
+                  </button>
+                </div>
+
+                <div class="col-lg-2 col-sm-4 col-12">
+                  <input
+                    type="checkbox"
+                    name="filtrar"
+                    id="filtrar"
+                    class="form-check-input"
+                  />
+                  <label for="filtrar" class="form-check-label">filtrar</label>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="tarjetas" class="my-3">
-        <div class="container">
-            <div class="row row-cols-2 row-cols-lg-5 row-cols-md-4 gx-4 gy-4">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <a href="#">
-                                <div class="text-center">
-                                    <span class="bi bi-lightbulb-fill fs-1"></span>
-                                </div>
-                                <h3 class="text-center">Estrategia</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <a href="#">
-                                <div class="text-center">
-                                    <span class="bi bi-trophy-fill fs-1"></span>
-                                </div>
-                                <h3 class="text-center">Lucha</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <a href="#">
-                                <div class="text-center">
-                                    <span class="bi bi-people-fill fs-1"></span>
-                                </div>
-                                <h3 class="text-center">Cooperativo</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <a href="#">
-                                <div class="text-center">
-                                    <span class="bi bi-grid-1x2-fill fs-1"></span>
-                                </div>
-                                <h3 class="text-center">Plataforma</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <a href="#">
-                                <div class="text-center">
-                                    <span class="bi bi-emoji-dizzy-fill fs-1"></span>
-                                </div>
-                                <h3 class="text-center">Horror</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <a href="#">
-                                <div class="text-center">
-                                    <span class="bi bi-car-front-fill fs-1"></span>
-                                </div>
-                                <h3 class="text-center">Carrera</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <a href="#">
-                                <div class="text-center">
-                                    <span class="bi bi-incognito fs-1"></span>
-                                </div>
-                                <h3 class="text-center">Misterio</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <a href="#">
-                                <div class="text-center">
-                                    <span class="bi bi-motherboard fs-1"></span>
-                                </div>
-                                <h3 class="text-center">Educacional</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <a href="#">
-                                <div class="text-center">
-                                    <span class="bi bi-water fs-1"></span>
-                                </div>
-                                <h3 class="text-center">Acuático</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row row-cols-2 row-cols-lg-5 row-cols-md-4 gx-4 gy-4">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <a href="#">
+                  <div class="text-center">
+                    <span class="bi bi-lightbulb-fill fs-1"></span>
+                  </div>
+                  <h3 class="text-center">Estrategia</h3>
+                </a>
+              </div>
             </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <a href="#">
+                  <div class="text-center">
+                    <span class="bi bi-trophy-fill fs-1"></span>
+                  </div>
+                  <h3 class="text-center">Lucha</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <a href="#">
+                  <div class="text-center">
+                    <span class="bi bi-people-fill fs-1"></span>
+                  </div>
+                  <h3 class="text-center">Cooperativo</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <a href="#">
+                  <div class="text-center">
+                    <span class="bi bi-grid-1x2-fill fs-1"></span>
+                  </div>
+                  <h3 class="text-center">Plataforma</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <a href="#">
+                  <div class="text-center">
+                    <span class="bi bi-emoji-dizzy-fill fs-1"></span>
+                  </div>
+                  <h3 class="text-center">Horror</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <a href="#">
+                  <div class="text-center">
+                    <span class="bi bi-car-front-fill fs-1"></span>
+                  </div>
+                  <h3 class="text-center">Carrera</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <a href="#">
+                  <div class="text-center">
+                    <span class="bi bi-incognito fs-1"></span>
+                  </div>
+                  <h3 class="text-center">Misterio</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <a href="#">
+                  <div class="text-center">
+                    <span class="bi bi-motherboard fs-1"></span>
+                  </div>
+                  <h3 class="text-center">Educacional</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <a href="#">
+                  <div class="text-center">
+                    <span class="bi bi-water fs-1"></span>
+                  </div>
+                  <h3 class="text-center">Acuático</h3>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="container">
+      <h2 class="fw-bold">Lorem ipsum dolor adipisicing elit.</h2>
+      <p class="text-muted">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, ipsa
+        iusto sit vel eum eaque architecto. Optio eos ullam error. Harum magnam
+        dolore reprehenderit, laudantium praesentium nostrum explicabo aliquam
+        fuga?
+      </p>
+      <a href="#" class="btn btn-sm btn-secondary float-end">ver</a>
+      <p class="fst-italic text-muted">20-11-2002</p>
 
-        <h2 class="fw-bold">Lorem ipsum dolor adipisicing elit.</h2>
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, ipsa iusto sit vel eum eaque architecto. Optio eos ullam error. Harum magnam dolore reprehenderit, laudantium praesentium nostrum explicabo aliquam fuga?</p>
-        <a href="#" class="btn btn-sm btn-secondary float-end">ver</a>
-        <p class="fst-italic text-muted">20-11-2002</p>
+      <hr />
 
-        <hr>
+      <h2 class="fw-bold">Lorem ipsum dolor adipisicing elit.</h2>
+      <p class="text-muted">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+        quam sint, quasi id, adipisci non doloremque ullam consectetur quos
+        maxime aspernatur velit harum facilis cumque dolores voluptas vel
+        delectus facere.
+      </p>
+      <a href="#" class="btn btn-sm btn-secondary float-end">ver</a>
+      <p class="fst-italic text-muted">20-11-2002</p>
 
-        <h2 class="fw-bold">Lorem ipsum dolor adipisicing elit.</h2>
-        <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium quam sint, quasi id, adipisci non doloremque ullam consectetur quos maxime aspernatur velit harum facilis cumque dolores voluptas vel delectus facere.</p>
-        <a href="#" class="btn btn-sm btn-secondary float-end">ver</a>
-        <p class="fst-italic text-muted">20-11-2002</p>
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a href="" class="page-link">Anterior</a></li>
+        <li class="page-item"><a href="" class="page-link">1</a></li>
+        <li class="page-item"><a href="" class="page-link">2</a></li>
+        <li class="page-item"><a href="" class="page-link">Siguiente</a></li>
+      </ul>
 
-        <ul class="pagination justify-content-center">
-            <li class="page-item"><a href="" class="page-link">Anterior</a></li>
-            <li class="page-item"><a href="" class="page-link">1</a></li>
-            <li class="page-item"><a href="" class="page-link">2</a></li>
-            <li class="page-item"><a href="" class="page-link">Siguiente</a></li>
-        </ul>
-
-        <a href="#" class="btn btn-primary btn-lg">Post anteriores</a>
+      <div class="d-flex justify-content-end mb-4">
+        <a href="#" class="btn btn-primary btn-lg text-uppercase"
+          >Post anteriores <i class="bi bi-arrow-right"></i
+        ></a>
+      </div>
     </section>
 
     <footer class="container">
-        <div class="row">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <ul>
-                    <li><a href="#"><span class="bi-linkedin"></span></a></li>
-                    <li><a href="#"><span class="bi-facebook"></span></a></li>
-                    <li><a href="#"><span class="bi-youtube"></span></a></li>
-                </ul>
+      <div class="row gx-4 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <ul class="text-center">
+            <li class="list-inline-item">
+              <a href="#"><span class="bi-linkedin"></span></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><span class="bi-facebook"></span></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><span class="bi-youtube text-danger"></span></a>
+            </li>
+          </ul>
 
-                <div>Copyright &copy;Mi web 2023</div>
-            </div>
+          <div class="small text-center text-muted">
+            Copyright &copy;Mi web 2023
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>
